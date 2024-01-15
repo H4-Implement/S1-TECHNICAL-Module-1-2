@@ -26,7 +26,7 @@
         <!--</header>-->
         
         <!-- OBJECTIVE -->
-        <nav><hr class="solid"></nav>
+        <nav><hr class="solid" id="separate"></nav>
         <div class="section" id="S1">
             <section id="SS1">
                 <h2>OBJECTIVE:</h2>
@@ -40,34 +40,43 @@
             <div class="row1">  
                 <div class="column1" id="SC1"><h3><i>Primary</i></h3></div>
                 <div class="column2" id="SC2"><h3><i>:</i></h3></div>
-                <div class="column3" id="SC3"><p>PLACEHOLDER SCHOOL (S.Y 20**)</p></div>
+                <div class="column3" id="SC3"><p>Chair of St. Peter School (S.Y 2009-2016)</p></div>
             </div>
             <div class="row2">
                 <div class="column1" id="SC1"><h3><i>Secondary</i></h3></div>
                 <div class="column2" id="SC2"><h3><i>:</i></h3></div>
-                <div class="column3" id="SC3"><p>PLACEHOLDER SCHOOL (S.Y 20**)</p></div>
+                <div class="column3" id="SC3"><p>Chair of St. Peter School (S.Y 2016-2020)</p></div>
             </div>
             <div class="row3">
                 <div class="column1" id="SC1"><h3><i>Senior Highschool</i></h3></div>
                 <div class="column2" id="SC2"><h3><i>:</i></h3></div>
-                <div class="column3" id="SC3"><p>PLACEHOLDER SCHOOL (S.Y 20**)</p></div>
+                <div class="column3" id="SC3"><p>(Mapua) Malayan Colleges Laguna (S.Y 2020-2022)</p></div>
             </div>
         </div>
 
         <!-- SKILLS SECTION -->
         <div class="skills">
             <h2>SKILLS</h2>
-            <h3>> SKILL PLACEHOLDER</h3>
-            <h3>> SKILL PLACEHOLDER</h3>
-            <h3>> SKILL PLACEHOLDER</h3>
+            <h3>> Graphic Designer (Freelancer) <a href="https://www.instagram.com/h4des.create/">Support here!</a></h3>
+            <h3>> Basic Web Design</h3>
+            <h3>> Digital Artist</h3>
         </div>
     </div>
     <script>
         function changeColor() {
             var holder = document.getElementById("holder");
-            if (document.getElementById('holder').style.backgroundColor = '#fff') {
+            var navHr = document.querySelector("nav hr");
+    
+            var currentColor = window.getComputedStyle(holder, null).getPropertyValue('background-color');
+    
+            if (currentColor === 'rgb(255, 255, 255)') {
                 holder.style.backgroundColor = "#2a3852";
                 holder.style.color = "#fff";
+                navHr.style.borderColor = "#fff";
+            } else {
+                holder.style.backgroundColor = "#fff";
+                holder.style.color = "#000";
+                navHr.style.borderColor = "#000";
             }
         }
     </script>

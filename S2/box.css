@@ -1,0 +1,130 @@
+/* LUIS CORTEZ */
+
+.buttons {
+    margin: auto;
+    width: 75%;
+}
+
+.buttons .container {
+    float: left;
+    margin-top: 100px;
+    width: 10%;
+    padding: 50px;
+}
+
+button {
+    margin: 20px;
+    padding: 10px;
+}
+
+button:hover {
+    transform: scale(1.3);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.b1 {
+    background-color: purple;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.b2 {
+    background-color: pink;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.b3 {
+    background-color: blue;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.b4 {
+    background-color: lime;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.b5 {
+    background-color: yellow;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.b6 {
+    background-color: orange;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.b7 {
+    background-color: red;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* BUTTON HANDLES */
+
+.boxes {
+    width: 10%;
+    margin: auto;
+}
+
+#box0 {
+    position: absolute;
+    margin-top: 150px;
+    float: right;
+    width: 500px;
+    height: 500px;
+    border: 15px solid white;
+    animation: pull 2s ease;
+}
+
+#box1 {
+    position: absolute;
+    margin-top: 150px;
+    float: right;
+    width: 500px;
+    height: 500px;
+    border: 15px solid black;
+    animation: drop 2s ease;
+    z-index: 1;
+}
+
+/* BOXES ANIMATION */
+
+@keyframes drop{
+    from {
+        top: -700px;
+    }
+    to {
+        top: 8px;
+    }
+    /* 100%{transform: translateY(750px)} */
+}
+
+@keyframes pull{
+    from {
+        top: 8px;
+    }
+    to {
+        top: -800px;
+    }
+    /* 100%{transform: translateY(-750px)} */
+  }
+
+/* ANIMATION HANDLE */
+
+
+
